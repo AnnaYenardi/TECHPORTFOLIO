@@ -15,10 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Anna Yenardi's Portfolio</title>
     
-<!--
-Mini Profile Template
-https://templatemo.com/tm-530-mini-profile
--->
   </head>
   <body>
     <header class="header">
@@ -50,8 +46,6 @@ https://templatemo.com/tm-530-mini-profile
       <div id="about" class="tm-bg-white-transparent tm-welcome-container" style="height: 100vh;">
         <div class="container-fluid" style="margin-right: 0px; padding-right: 0px;">
           <div class="row h-100">
-            <!-- Welcome Text -->
-            <!-- White transparent bg -->
             <div class="col-md-6 tm-welcome-left-col">
               <div class="tm-welcome-left">
                 <h2 class="tm-welcome-title">Hi I'm Anna Claudia Yenardi!</h2>
@@ -59,7 +53,6 @@ https://templatemo.com/tm-530-mini-profile
                   I am an architect by training. Growing up, I always thought that coding is difficult, so much that I never even tried my hands on it. However, I ended up developing a web application from scratch as my architectural thesis project. That project helped me discover my love for programming and also rekindled my childhood dream of developing games. Having not received any formal training in programming, I have been self-learning ever since, developing simple games and even founding my own web-app business based on my thesis.</p>
               </div>
             </div>
-            <!-- Brown bg -->
             <div class="col-md-6" style="width: 50%;">
               <div class="tm-welcome-right d-flex justify-content-center text-center align-items-center" style="display: flex; align-items: center;">
                 <img class="profile" src="img/profile.png">
@@ -191,23 +184,15 @@ https://templatemo.com/tm-530-mini-profile
 
     <!-- Skills -->
     <section id="skill" class="tmPortfolio" style="background-color: #222222;">
-      <div style="height: 100vh; display: flex; align-items: center;">
+      <div style="min-height: 100vh; display: flex; align-items: center;">
         <div class="container-fluid">
           <div class="row h-100">
             <div class="col-md-6">
-              <h2 id="check" style="color: white;">Programming Languages</h2>
-            </div>
-            <div class="col-md-6">
               <div class="row subRow">
-                <div class="col-md-3"></div>
-                <div class="col-md-9">
-                  <h2 style="color: white;">Human Languages</h2>
+                <div class="col-md-12">
+                  <h2 id="check" style="color: white;">Programming Languages</h2>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row h-100">
-            <div class="col-md-6">
               <br>
               <div class="row subRow">
                 <div class="col-md-4 my-auto">
@@ -332,6 +317,13 @@ https://templatemo.com/tm-530-mini-profile
             </div>
             
             <div class="col-md-6">
+              <div class="row subRow">
+                <div class="col-md-3 my-auto"></div>
+                <div class="col-md-9">
+                  <h2 style="color: white;">Human Languages</h2>
+                </div>
+              </div>
+
               <br>
               <div class="row subRow">
                 <div class="col-md-3 my-auto"></div>
@@ -583,6 +575,7 @@ https://templatemo.com/tm-530-mini-profile
     <script src="js/parallax.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+
       AOS.init();
 
       //TYPEWRITER
@@ -689,8 +682,6 @@ https://templatemo.com/tm-530-mini-profile
               secondInd = true;
             }
       });
-
-// FROM TEMPLATE
         
       function detectMsBrowser() {
         using_ms_browser =

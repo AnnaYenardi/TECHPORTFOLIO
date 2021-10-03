@@ -549,10 +549,19 @@ a:hover {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .tm-welcome-right {
+    height: 20%;
+    background: none;
+  }
+
+  .profile {
+    width: 80%;
+  }
+
   /* Place the timelime to the left */
   .timeline::after {
-  left: 31px;
+  left: 2.5vmin;
   }
   
   /* Full-width containers */
@@ -564,11 +573,11 @@ a:hover {
 
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-  left: 0px;
+  left: 2.1vmin;
   }
   
   /* Make all right containers behave like the left ones */
   .right {
-  left: 0%;
+    left: -1.3vmin;
   }
 }
