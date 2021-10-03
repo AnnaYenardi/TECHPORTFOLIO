@@ -1,0 +1,574 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #222222;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-family: "Tourney";
+}
+
+h1 {
+  font-family: "Tourney";
+}
+
+p {
+  font-size: 2vmin;
+  font-family: 'Chakra Petch';
+  margin-bottom: 2vmin;
+  line-height: 1.8;
+}
+
+a,
+button {
+  transition: all 0.3s ease;
+  padding: 0.8vmin;
+  padding-right: 1.6vmin;
+  color: black;
+  font-size: 2vmin;
+  font-family: 'Chakra Petch';
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0px;
+  font-size: 1.6vmin;
+  cursor: pointer;
+}
+
+.bigB {
+  font-family: "VT323";
+  font-size: 4vmin;
+  color: #222222;
+  pointer-events:none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 4vmin;
+}
+
+.smallB {
+  font-family: "VT323";
+  font-size: 2.4vmin;
+  color: #222222;
+  pointer-events:none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 2vmin;
+}
+
+.profile {
+  position: absolute;
+  z-index: 1;
+  width: 60%;
+  height: auto;
+  margin: 0px;
+}
+
+.static {
+  position: absolute;
+  z-index: 1;
+  background: white;
+  height: 28vmin;
+  width: 28vmin;
+  margin: 1.5vmin;
+}
+
+.active {
+  height: 28vmin;
+  width: 28vmin;
+  margin: 1.5vmin;
+  filter: brightness(80%);
+  object-fit: cover;
+  box-shadow: 1vmin 1vmin 3vmin #777777;
+}
+
+.static:hover {
+  opacity:0;
+}
+
+.header {
+  opacity: 100%;
+  background: none;
+  padding: 0px;
+  text-align: right;
+  position: fixed;
+  padding-right: 4vw;
+  width: 100%;
+  display: flex;
+  top: 0px;
+  z-index: 3;
+}
+
+.container-fluid {
+  max-width: 1600px;
+}
+
+.tm-bg-black-transparent {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 2vmin;
+}
+
+.tm-bg-white-transparent {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*
+  Welcome section
+*/
+.tmWelcome {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.tm-brand-container-outer {
+  margin-top: -400px;
+}
+
+.tm-brand-container-inner {
+  max-width: 600px;
+  width: 100%;
+}
+
+.tm-brand-container {
+  padding: 5vmin;
+}
+
+.tm-brand-name {
+  font-size: 3.8rem;
+}
+
+.tm-brand-description {
+  font-size: 1.4rem;
+}
+
+.parallax-window {
+  min-height: 1100px;
+  background: transparent;
+}
+
+#tmContact {
+  min-height: 1197px;
+}
+
+.tm-welcome-container {
+  min-height: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.tm-welcome-title {
+  margin-bottom: 40px;
+}
+
+.tm-welcome-left {
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.tm-welcome-left-col {
+  display: flex;
+  align-items: center;
+}
+
+.tm-welcome-right {
+  color: white;
+  background-color: #222222;
+  padding: 10vmin;
+  height: 100%;
+}
+
+.tm-welcome-icon {
+  margin-bottom: 50px;
+  display: block;
+  text-align: center;
+}
+
+/*
+  Portfolio section
+*/
+
+.tmPortfolio {
+  padding-top: 80px;
+}
+
+.tm-portfolio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.tm-portfolio-name {
+  width: 330px;
+  height: 220px;
+  font-size: 2rem;
+  padding: 70px 95px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.tm-portfolio-description {
+  width: calc(100% - 330px);
+  padding: 20px 45px;
+}
+
+.tm-portfolio-description h3 {
+  margin-bottom: 20px;
+}
+
+/*
+  Contact section
+*/
+
+#tmContact {
+  padding-top: 95px;
+}
+
+.tm-contact-item {
+  width: 33.3334%;
+  max-width: 345px;
+  height: auto;
+  min-height: 420px;
+  margin-right: 35px;
+  background-color: white;
+  padding: 54px 34px 44px;
+}
+
+.tm-contact-item:last-child {
+  margin-right: 0;
+}
+
+.tm-contact-items-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 130px;
+}
+
+.tm-contact-item-icon {
+  margin-bottom: 45px;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tmContactForm {
+  width: 100%;
+  max-width: 680px;
+  padding: 45px 45px 30px;
+  margin-bottom: 95px;
+}
+
+.form-group {
+  max-width: 355px;
+}
+
+.form-control {
+  background: transparent;
+  border-color: #999999;
+  padding: 15px 10px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.tm-btn-submit {
+  background-color: #999999;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+}
+
+.tm-btn-submit:focus,
+.tm-btn-submit:hover {
+  background-color: #676767;
+}
+
+.tm-copyright-text {
+  margin-bottom: 30px;
+}
+
+.tm-link {
+  color: #676767;
+}
+
+@media (max-width: 1054px) {
+  .tm-contact-item-icon {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .tm-contact-items-container {
+    flex-direction: column;
+  }
+
+  .tm-contact-item {
+    width: auto;
+    max-width: 680px;
+    min-height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .tm-contact-item:last-child {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  #tmContactForm {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 730px) {
+  .tm-portfolio-item {
+    flex-direction: column;
+  }
+
+  .tm-portfolio-name {
+    justify-content: center;
+  }
+
+  .tm-portfolio-name,
+  .tm-portfolio-description {
+    width: 100%;
+  }
+
+  .tm-portfolio-description {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 572px) {
+  .tm-brand-container {
+    padding: 45px;
+  }
+}
+
+@media (max-width: 443px) {
+  .tm-brand-name {
+    font-size: 3rem;
+  }
+
+  .tm-brand-container {
+    padding: 25px;
+  }
+}
+
+.container {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #ba5976;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+.meter {
+  box-sizing: content-box;
+  height: 2vmin; 
+  position: relative;
+  background: none;
+  padding: auto;
+  border: 1px solid white;
+  margin-bottom: 2vmin;
+  display: block;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.animate > span:after {
+  display: none;
+}
+
+.orange > span {
+  background-color: white;
+  margin: 0px;
+}
+
+.nostripes > span > span,
+.nostripes > span::after {
+  background-image: none;
+}
+
+#page-wrap {
+  width: 490px;
+  margin: 80px auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 0.6vmin;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1vmin;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+/* Container around content */
+.time {
+  padding-left: 2vmin;
+  padding-right: 2vmin;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  z-index: 1;
+}
+
+/* Container to buffer */
+.timebuff {
+  padding-left: 2vmin;
+  padding-right: 2vmin;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.time::after {
+  content: '';
+  position: absolute;
+  width: 2vmin;
+  height: 2vmin;
+  right: 0px;
+  background-color: #222222;
+  border: 4px solid white;
+  top: 1vmin;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: -1.3vmin;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Fix the circle for containers on the right side */
+.left::after {
+  right: -1.6vmin;
+}
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -1.75vmin;
+}
+
+/* The actual content */
+.contentexp {
+  padding: 0px;
+  background: none;
+  position: relative;
+  color: white;
+  border: 0.3vmin solid white;
+  border-radius: 1vmin;
+}
+
+.content {
+  padding: 0px;
+  color: white;
+  position: relative;
+  border-radius: 1vmin;
+}
+
+.cright {
+  text-align: left;
+  padding-left: 2vmin;
+}
+.cleft {
+  text-align: right;
+  padding-right: 2vmin;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .time {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 0px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
