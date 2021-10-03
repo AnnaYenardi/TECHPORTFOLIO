@@ -549,7 +549,7 @@ a:hover {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .tm-welcome-right {
     height: 20%;
     background: none;
