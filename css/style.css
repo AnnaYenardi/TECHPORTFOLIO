@@ -38,6 +38,7 @@ button {
 
 a:hover {
   text-decoration: none;
+  color: #888888;
 }
 
 .btn {
@@ -579,5 +580,43 @@ a:hover {
   /* Make all right containers behave like the left ones */
   .right {
     left: -1.3vmin;
+  }
+
+  .header {
+    justify-content: flex-end;
+    padding-right: 0px;
+    padding-top: 1vmin;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-fixed-top {
+      top: 0;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+      outline: none;
+      box-shadow: none;
   }
 }

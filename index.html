@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Chakra Petch'>
@@ -13,19 +13,29 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Tourney'>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Anna Yenardi's Portfolio</title>
     
   </head>
   <body>
     <header class="header">
-      <div class="navbar">
-          <a class="navtag" href="#home">Home</a>
-          <a class="navtag" href="#about">About Me</a>
-          <a class="navtag" href="#education">Education & Experience</a>
-          <a class="navtag" href="#skill">Skills</a>
-          <a class="navtag" href="#projects">Projects</a>
-          <a class="navtag" href="#contact">Contact Me</a>
-      </div>
+      <nav class="navbar navbar-expand-xl navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li><a class="navtag" href="#home">Home</a></li>
+            <li><a class="navtag" href="#about">About Me</a></li>
+            <li><a class="navtag" href="#education">Education & Experience</a></li>
+            <li><a class="navtag" href="#skill">Skills</a></li>
+            <li><a class="navtag" href="#projects">Projects</a></li>
+            <li><a class="navtag" href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
   </header>
 
     <!-- Welcome Section -->
@@ -576,7 +586,6 @@
     </section>
     <!-- End Project & Contact -->
 
-    <script src="js/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -648,16 +657,22 @@
       scrollPercent = $(window).scrollTop() / (docHeight - windowHeight) * 100;
       
       if (scrollPercent >30.3 && scrollPercent <83.8){
+        $("nav").removeClass("navbar-light");
+        $("nav").addClass("navbar-dark");
         $(".navtag").each(function () {
           $(this).css('color', 'white');
           $(this).css('background-color', '#222222');
         });
       } else if (scrollPercent > 99.6){
+        $("nav").removeClass("navbar-dark");
+        $("nav").addClass("navbar-light");
         $(".navtag").each(function () {
           $(this).css('color', '#222222');
           $(this).css('background-color', 'white');
         });
       } else {
+        $("nav").removeClass("navbar-dark");
+        $("nav").addClass("navbar-light");
         $(".navtag").each(function () {
           $(this).css('color', '#222222');
           $(this).css('background', 'none');
@@ -669,7 +684,6 @@
       } else {
         indicator = false;
       }
-      console.log(scrollPercent);
       if (indicator == true && secondInd == true){
         $(".meter > span").each(function () {
                 $(this)
