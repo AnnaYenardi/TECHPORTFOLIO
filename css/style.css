@@ -583,8 +583,7 @@ a:hover {
   }
 
   .header {
-    justify-content: flex-end;
-    padding-right: 0px;
+    justify-content: flex-end;  
     padding-top: 1vmin;
   }
 
