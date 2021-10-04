@@ -601,6 +601,7 @@ li {
   }
   .navbar-fixed-top {
       top: 0;
+      border-width: 0 0 1px;
   }
   .navbar-collapse.collapse {
       display: none!important;
@@ -610,8 +611,12 @@ li {
       margin-top: 7.5px;
   }
   .navbar-nav>li {
-      float: left;
+      float: none;
   }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
   .collapse.in{
       display:block !important;
   }
