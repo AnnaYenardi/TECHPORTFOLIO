@@ -555,6 +555,10 @@ li {
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 1081px) {
+  body {
+    overflow-x: hidden;
+  }
+  
   .tm-welcome-right {
     height: 20%;
     background: none;
